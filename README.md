@@ -6,6 +6,7 @@ Este projeto foi desenvolvido com o objetivo de criar uma página pessoal utiliz
 
 🚀 Tecnologias utilizadas
 HTML
+
 🔗 Acesse o site
 
-a
+(https://teusnr.github.io/teusnr/)
