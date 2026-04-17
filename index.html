@@ -3,50 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Minha Página Pessoal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 80%;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        img {
+            width: 180px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #00c3ff;
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-top: 25px;
+            color: #00c3ff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgba(255,255,255,0.1);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #00c3ff;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #009acd;
+        }
+    </style>
+
 </head>
 <body>
 
-    <!-- 1. Título principal -->
-    <h1>Matheus Maximino</h1>
+<div class="container">
 
-    <!-- 2. Subtítulo -->
+    <h1>Matheus Maximino</h1>
     <h2>Sistema de Informação - 1° Período</h2>
 
-    <!-- 3. Foto pessoal -->
-    <img src="fototeusnr.jpg" alt="Minha foto" width="200">
+    <img src="fototeusnr.jpg" alt="Minha foto">
 
-    <!-- 4. Data de nascimento -->
     <h3>Data de nascimento</h3>
     <p>10/12/2004</p>
 
-    <!-- 5. Descrição pessoal -->
+    <h3>Sobre mim</h3>
     <p>
         Meu nome é Mateus, gosto de tecnologia, principalmente programação e 
         eletrônicos. No meu tempo livre gosto de estudar, mexer com celulares 
         e também aprender sobre novas oportunidades de negócio.
     </p>
 
-    <!-- 6. Conhecimentos -->
     <h3>Conhecimentos</h3>
     <ul>
         <li>HTML</li>
         <li>Python</li>
-        <li>C++></li>
+        <li>C++</li>
         <li>Lógica de programação</li>
     </ul>
 
-    <!-- 7. Link do curso -->
     <h3>Sobre o curso</h3>
     <p>
         O Curso de Sistemas de Informação forma profissionais capazes de desenvolver e
-      gerenciar sistemas tecnológicos. Durante a graduação, são estudadas áreas como
-      programação, banco de dados e desenvolvimento de software, sempre com foco em 
-      resolver problemas e melhorar processos nas empresas.
+        gerenciar sistemas tecnológicos. Durante a graduação, são estudadas áreas como
+        programação, banco de dados e desenvolvimento de software, sempre com foco em 
+        resolver problemas e melhorar processos nas empresas.
     </p>
 
     <a href="https://www.ifal.edu.br" target="_blank">
         Acessar site da instituição
     </a>
+
+</div>
 
 </body>
 </html>
