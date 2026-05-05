@@ -51,7 +51,7 @@
       box-sizing: border-box;
     }
 
-    /* Radios alinhados */
+    /* Radios */
     .radio-group div {
       display: flex;
       align-items: center;
@@ -69,20 +69,28 @@
       margin: 0;
     }
 
-    button {
-      margin-top: 20px;
+    /* Botões */
+    .btn {
       width: 100%;
       padding: 10px;
       border: none;
       border-radius: 5px;
-      background-color: #0a8f3c;
-      color: white;
       font-size: 16px;
       cursor: pointer;
+      margin-top: 15px;
     }
 
-    button:hover {
+    .submit {
+      background-color: #0a8f3c;
+      color: white;
+    }
+
+    .submit:hover {
       background-color: #087a32;
+    }
+
+    .reset {
+      background-color: #ccc;
     }
 
   </style>
@@ -95,9 +103,7 @@
 
   <form action="https://httpbin.org/post" method="post">
 
-    <!-- ===================== -->
-    <!-- DADOS PESSOAIS -->
-    <!-- ===================== -->
+    <!-- Dados Pessoais -->
     <fieldset>
       <legend>Dados Pessoais</legend>
 
@@ -105,7 +111,7 @@
       <input type="text" id="nome" name="nome" required minlength="5" maxlength="100">
 
       <label for="cpf">CPF</label>
-      <input type="text" id="cpf" name="cpf" required 
+      <input type="text" id="cpf" name="cpf" required
              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
              placeholder="000.000.000-00"
              title="CPF no formato 000.000.000-00">
@@ -120,9 +126,7 @@
 
     </fieldset>
 
-    <!-- ===================== -->
-    <!-- DADOS ACADÊMICOS -->
-    <!-- ===================== -->
+    <!-- Dados Acadêmicos -->
     <fieldset>
       <legend>Dados Acadêmicos</legend>
 
@@ -140,7 +144,6 @@
         </optgroup>
       </select>
 
-      <!-- Período -->
       <fieldset>
         <legend>Período</legend>
 
@@ -167,7 +170,9 @@
 
     </fieldset>
 
-    <button type="submit">Enviar solicitação</button>
+    <!-- Botões -->
+    <button type="submit" class="btn submit">Solicitar matrícula</button>
+    <button type="reset" class="btn reset">Limpar formulário</button>
 
   </form>
 </main>
