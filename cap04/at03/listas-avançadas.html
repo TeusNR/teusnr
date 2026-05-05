@@ -6,10 +6,9 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #0a8f3c, #ffffff);
-      color: #222;
     }
 
     header {
@@ -19,38 +18,75 @@
       padding: 20px;
     }
 
-    header img {
-      width: 80px;
-      display: block;
-      margin: 0 auto 10px;
+    h1 {
+      margin: 0;
     }
 
-    h1, h2 {
-      text-align: center;
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
     }
 
     section {
       background-color: white;
-      margin: 20px;
       padding: 20px;
+      margin-bottom: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
+    h2 {
+      border-bottom: 2px solid #0a8f3c;
+      padding-bottom: 5px;
+    }
+
     ol, ul, dl {
-      margin-left: 20px;
+      margin-left: 25px;
     }
 
     li {
       margin-bottom: 8px;
     }
 
-    a {
-      display: block;
-      text-align: center;
-      margin: 20px;
-      text-decoration: none;
+    li p {
+      margin: 5px 0 10px;
+    }
+
+    /* Destaque do ranking */
+    ol[reversed] li {
+      background-color: #f4f4f4;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    /* Glossário */
+    dt {
+      font-weight: bold;
+      margin-top: 10px;
       color: #0a8f3c;
+    }
+
+    dd {
+      margin-left: 15px;
+      margin-bottom: 5px;
+    }
+
+    /* Lista aninhada */
+    ul ul {
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #0a8f3c;
+      color: white;
+    }
+
+    a {
+      color: #0a8f3c;
+      text-decoration: none;
       font-weight: bold;
     }
 
@@ -60,158 +96,181 @@
 <body>
 
 <header>
-  <!-- Logo do IFAL (online) -->
-  <img src="https://www2.ifal.edu.br/o-ifal/comunicacao/arquivos/logos/IFAL_Viosa_vertical.png>
   <h1>Listas Avançadas</h1>
 </header>
 
-<!-- Seção 1 -->
-<section>
-  <h2>Roteiro de Estudos</h2>
+<main>
 
-  <ol>
-    <li>HTML básico
-      <ol type="a">
-        <li>Tags</li>
-        <li>Estrutura</li>
-      </ol>
-    </li>
+  <!-- Seção 1 -->
+  <section>
+    <h2>Roteiro de Estudos</h2>
 
-    <li>CSS básico
-      <ol type="a">
-        <li>Seletores</li>
-        <li>Estilos</li>
-      </ol>
-    </li>
+    <ol>
+      <li>HTML básico
+        <ol type="a">
+          <li>Tags principais</li>
+          <li>Estrutura</li>
+        </ol>
+      </li>
 
-    <li>JavaScript básico
-      <ol type="a">
-        <li>Variáveis</li>
-        <li>Funções</li>
-      </ol>
-    </li>
-  </ol>
+      <li>CSS básico
+        <ol type="a">
+          <li>Seletores</li>
+          <li>Estilização</li>
+        </ol>
+      </li>
 
-  <p>Agora avançando para conteúdos mais completos:</p>
+      <li>JavaScript básico
+        <ol type="a">
+          <li>Variáveis</li>
+          <li>Funções</li>
+        </ol>
+      </li>
+    </ol>
 
-  <ol start="4">
-    <li>Frameworks
-      <ol type="a">
-        <li>React</li>
-        <li>Vue</li>
-      </ol>
-    </li>
+    <p>Após concluir a base, seguimos para conteúdos mais avançados:</p>
 
-    <li>Backend
-      <ol type="a">
-        <li>Node.js</li>
-        <li>APIs</li>
-      </ol>
-    </li>
+    <ol start="4">
+      <li>Frameworks
+        <ol type="a">
+          <li>React</li>
+          <li>Vue</li>
+        </ol>
+      </li>
 
-    <li>Banco de Dados
-      <ol type="a">
-        <li>MySQL</li>
-        <li>PostgreSQL</li>
-      </ol>
-    </li>
-  </ol>
-</section>
+      <li>Backend
+        <ol type="a">
+          <li>Node.js</li>
+          <li>APIs</li>
+        </ol>
+      </li>
 
-<!-- Seção 2 -->
-<section>
-  <h2>Ranking de Tecnologias</h2>
+      <li>Banco de Dados
+        <ol type="a">
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+        </ol>
+      </li>
+    </ol>
+  </section>
 
-  <ol reversed>
-    <li>Git <p>Controle de versão essencial.</p></li>
-    <li>Node.js <p>Backend com JavaScript.</p></li>
-    <li>CSS <p>Estilo das páginas.</p></li>
-    <li>JavaScript <p>Interatividade web.</p></li>
-    <li>HTML <p>Estrutura da web.</p></li>
-  </ol>
-</section>
+  <!-- Seção 2 -->
+  <section>
+    <h2>Ranking de Tecnologias</h2>
 
-<!-- Seção 3 -->
-<section>
-  <h2>Glossário</h2>
+    <ol reversed>
+      <li>
+        Git
+        <p>Ferramenta essencial para controle de versão.</p>
+      </li>
 
-  <dl>
-    <dt>HTML</dt>
-    <dd>Linguagem de estrutura.</dd>
+      <li>
+        Node.js
+        <p>Permite JavaScript no backend.</p>
+      </li>
 
-    <dt>CSS</dt>
-    <dd>Linguagem de estilo.</dd>
+      <li>
+        CSS
+        <p>Responsável pelo design das páginas.</p>
+      </li>
 
-    <dt>JavaScript</dt>
-    <dd>Linguagem de programação.</dd>
-    <dd>Usada no front e backend.</dd>
+      <li>
+        JavaScript
+        <p>Responsável pela interatividade.</p>
+      </li>
 
-    <dt>API</dt>
-    <dd>Comunicação entre sistemas.</dd>
-    <dd>Pode ser REST ou GraphQL.</dd>
+      <li>
+        HTML
+        <p>Estrutura base da web.</p>
+      </li>
+    </ol>
+  </section>
 
-    <dt>HTTP</dt>
-    <dt>HTTPS</dt>
-    <dd>Protocolos da web.</dd>
+  <!-- Seção 3 -->
+  <section>
+    <h2>Glossário</h2>
 
-    <dt>URL</dt>
-    <dt>Endereço Web</dt>
-    <dd>Localização de um recurso.</dd>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação da web.</dd>
 
-    <dt>DNS</dt>
-    <dd>Traduz domínio para IP.</dd>
-  </dl>
-</section>
+      <dt>CSS</dt>
+      <dd>Linguagem de estilo.</dd>
 
-<!-- Seção 4 -->
-<section>
-  <h2>Mapa de Tecnologias</h2>
+      <dt>JavaScript</dt>
+      <dd>Linguagem de programação.</dd>
+      <dd>Usada no frontend e backend.</dd>
 
-  <ul>
-    <li>Desenvolvimento Web
-      <ul>
-        <li>Frontend
-          <ul>
-            <li>Linguagens
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </li>
-            <li>Frameworks
-              <ul>
-                <li>React</li>
-                <li>Vue.js</li>
-                <li>Angular</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+      <dt>API</dt>
+      <dd>Interface de comunicação entre sistemas.</dd>
+      <dd>Pode ser REST ou GraphQL.</dd>
 
-        <li>Backend
-          <ul>
-            <li>Linguagens
-              <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Node.js</li>
-              </ul>
-            </li>
-            <li>Bancos de Dados
-              <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</section>
+      <dt>HTTP</dt>
+      <dt>HTTPS</dt>
+      <dd>Protocolos de comunicação da web.</dd>
 
-<a href="../index.html">← Voltar à página principal</a>
+      <dt>URL</dt>
+      <dt>Endereço Web</dt>
+      <dd>Localização de um recurso na internet.</dd>
+
+      <dt>DNS</dt>
+      <dd>Traduz nomes de domínio em IP.</dd>
+    </dl>
+  </section>
+
+  <!-- Seção 4 -->
+  <section>
+    <h2>Mapa de Tecnologias</h2>
+
+    <ul>
+      <li>Desenvolvimento Web
+        <ul>
+          <li>Frontend
+            <ul>
+              <li>Linguagens
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </li>
+              <li>Frameworks
+                <ul>
+                  <li>React</li>
+                  <li>Vue.js</li>
+                  <li>Angular</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>Backend
+            <ul>
+              <li>Linguagens
+                <ul>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Node.js</li>
+                </ul>
+              </li>
+              <li>Bancos de Dados
+                <ul>
+                  <li>MySQL</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p><a href="../index.html">← Voltar à página principal</a></p>
+</footer>
 
 </body>
 </html>
