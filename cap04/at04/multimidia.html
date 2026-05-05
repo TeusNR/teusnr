@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Recursos Multimídia — Cap. 4 / Ativ. 4</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0a8f3c, #ffffff);
+      color: #222;
+    }
+
+    header {
+      background-color: #0a8f3c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    figure {
+      background-color: white;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 850px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    video, iframe, img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0a8f3c;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #0a8f3c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Recursos Multimídia</h1>
+</header>
+
+<main>
+
+  <!-- VÍDEO -->
+  <figure>
+    <video controls width="800" height="450" poster="poster-aula.jpg" preload="metadata">
+      <source src="video/aula-html.mp4" type="video/mp4">
+      <source src="video/aula-html.webm" type="video/webm">
+
+      <track 
+        src="legendas/aula-html.vtt" 
+        kind="subtitles" 
+        srclang="pt" 
+        label="Português" 
+        default>
+
+      <p>
+        Seu navegador não suporta vídeo.
+        <a href="video/aula-html.mp4">Baixar vídeo</a>
+      </p>
+    </video>
+
+    <figcaption>
+      Aula introdutória de HTML5. Fonte: material educacional.
+    </figcaption>
+  </figure>
+
+  <!-- ÁUDIO -->
+  <figure>
+    <audio controls preload="metadata">
+      <source src="audio/podcast.mp3" type="audio/mpeg">
+      <source src="audio/podcast.ogg" type="audio/ogg">
+
+      <p>
+        Seu navegador não suporta áudio.
+        <a href="audio/podcast.mp3">Baixar áudio</a>
+      </p>
+    </audio>
+
+    <figcaption>
+      Podcast sobre desenvolvimento web —
+      <a href="transcricao.html">Ver transcrição</a>
+    </figcaption>
+  </figure>
+
+  <!-- YOUTUBE -->
+  <figure>
+    <iframe 
+      width="800" 
+      height="450"
+      src="https://www.youtube-nocookie.com/embed/3oSIqIqzN3M"
+      title="Aula de HTML para iniciantes"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <figcaption>
+      Aula de HTML — Canal Curso em Vídeo (YouTube)
+    </figcaption>
+  </figure>
+
+  <!-- IMAGEM -->
+  <figure>
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/banner-wide.jpg">
+      <img 
+        src="img/banner-mobile.jpg" 
+        alt="Banner sobre desenvolvimento web"
+        width="800" 
+        height="400">
+    </picture>
+
+    <figcaption>
+      Banner ilustrativo sobre desenvolvimento web.
+    </figcaption>
+  </figure>
+
+</main>
+
+<footer>
+  <p>Nome: Seu Nome</p>
+  <p>Matrícula: 000000</p>
+  <p>Data: 2026</p>
+</footer>
+
+</body>
+</html>
