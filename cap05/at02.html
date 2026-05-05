@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Usuário — Ativ. 2</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0a8f3c, #ffffff);
+      margin: 0;
+    }
+
+    main {
+      max-width: 500px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      margin-top: 15px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    fieldset label {
+      display: inline;
+      margin-left: 5px;
+      font-weight: normal;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .radio-group div {
+      margin-bottom: 5px;
+    }
+
+    .checkbox {
+      margin-top: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit {
+      background-color: #0a8f3c;
+      color: white;
+    }
+
+    .submit:hover {
+      background-color: #087a32;
+    }
+
+    .reset {
+      background-color: #ccc;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<main>
+  <h1>Cadastro de Usuário</h1>
+
+  <form action="https://httpbin.org/post" method="post">
+
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" required minlength="3">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" required minlength="8">
+
+    <label for="nascimento">Data de nascimento</label>
+    <input type="date" id="nascimento" name="nascimento" required>
+
+    <fieldset>
+      <legend>Gênero</legend>
+
+      <div class="radio-group">
+        <div>
+          <input type="radio" id="masculino" name="genero" value="masculino">
+          <label for="masculino">Masculino</label>
+        </div>
+
+        <div>
+          <input type="radio" id="feminino" name="genero" value="feminino">
+          <label for="feminino">Feminino</label>
+        </div>
+
+        <div>
+          <input type="radio" id="outro" name="genero" value="outro">
+          <label for="outro">Outro</label>
+        </div>
+
+        <div>
+          <input type="radio" id="nao" name="genero" value="prefiro_nao_informar">
+          <label for="nao">Prefiro não informar</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="checkbox">
+      <input type="checkbox" id="aceite" name="aceite" value="sim" required>
+      <label for="aceite">Aceito os termos de uso</label>
+    </div>
+
+    <button type="submit" class="submit">Criar conta</button>
+    <button type="reset" class="reset">Limpar campos</button>
+
+  </form>
+</main>
+
+</body>
+</html>
