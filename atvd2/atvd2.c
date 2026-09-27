@@ -4,7 +4,7 @@ int main() {
     int dividendo;
     int divisor;
 
-    printf("Dividendo e divisor");
+    printf("Dividendo e divisor: ");
     scanf("%d %d", &dividendo, &divisor);
 
     printf("Quociente: %d\n", dividendo / divisor);
